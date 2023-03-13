@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>Form control RULES:</h1>
+    <ul>
+        <li>All form controls have values</li>
+        <li>All form controls should have names</li>
+        <li>text inputs - name and id could match</li>
+        <li>for attribute of label matches id of input</li>
+        
+    </ul>
+    <form>
+        <!-- text inputs - name and id could match -->
+        <!-- for attribute of label matches id of input -->
+        <!-- Command shift P to wrap things with divs -->
+        <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName">
+        </div>
+        <div>
+        <label for="lastName">First Name:</label>
+        <input type="text" name="lastName" id="lastName">
+        </div>
+        <div>
+            <label for="userPassword">Password</label>
+            <input type="password" name="userPassword" id="userPassword">
+        </div>
+        <div>
+            <label for="bithdate">Birthdate</label>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <!-- family of radio inputs - fieldset -->
+        <fieldset>
+        <!-- Radio button family members share the same name -->
+        <!-- Don't forget to marry with lable's for and the input's id -->
+        <!-- also don't forget the values -->
+        <!-- Use "option click to choose multiple attributes" -->
+            <legend>How did you hear about us?</legend>
+            <input type="radio" name="heardAbout" id="Advertisement" value="advertisement">
+            <label for="Advertisement">Advertisement</label>
+            <input type="radio" name="heardAbout" id="Word of Mouth" value="wordofMouth">
+            <label for="Word of Mouth">Word of Mouth</label>
+            <input type="radio" name="heardAbout" id="Web Search" value="webSearch">
+            <label for="Web Search">Web Search</label>
+        </fieldset>
+        <div>        
+        <label for="Comments">Comments</label>
+        <br>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="fovariteTeam">Waht's your favorite team?</label>
+            <br>
+            <select name="favoriteTeam" id="favoriteTeam">
+            <option value="Bears">Chicago Bears</option>
+            <option value="Cubs">Chicago Cubs</option>
+            <option value="Sox">Chicago White Sox</option>
+            <option value="Bulls">Chicago Bulls</option>
+            <option value="Blackhawks">Chicago Blackhawks</option>
+        </select>
+        </div>
+        <!-- submit button must be inside the form tags -->
+        <input type="reset" value="reset form">
+        <input type="submit" value="send form">
+        <!-- <button type="submit">Send Form</button> -->
+        <!-- <button>Send Form</button> DO NOT RECOMMEND-->
+    </form>
+</body>
+</html>
